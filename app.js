@@ -67,6 +67,21 @@ var msgUsers = {
 		"name": "[MSG15 ADMIN] Cobra",
 		"room": 44215
 	},
+	59119854: {
+		"accountid": 59119854,
+		"name": "[MSG15 MOD] alicia ws@d",
+		"room": 44215
+	},
+	133090071: {
+		"accountid": 133090071,
+		"name": "[MSG15 ADMIN]Mrs. uLLeticaL™",
+		"room": 44215
+	},
+	8520498: {
+		"accountid": 8520498,
+		"name": "[MSG15 ADMIN] Minz",
+		"room": 44215
+	},
 };
 
 var baseURL = 'http://steamapi-a.akamaihd.net/ITowerAttackMiniGameService/GetPlayerNames/v0001/?gameid=';
@@ -142,15 +157,16 @@ var next = function(nextRoomID, instance, step) {
 	if (nextRoomID < lowestRoom + instance) {
 		nextRoomID = lowestRoom + instance;
 	}
-	if (nextRoomID % 50 == 0)
-		console.log('getting room '+ nextRoomID);
+	/*if (nextRoomID % 50 == 0)
+		console.log('getting room '+ nextRoomID);*/
 	setTimeout(function() {
 		getNames(nextRoomID, instance, step, next);
 	}, 1000);
 };
 
+var instances = 50;
 var i = 0;
-while (i < 50) {
-	next(lowestRoom + i, i, 50);
+while (i < instances) {
+	next(lowestRoom + i, i, instances);
 	i++;	
 }
