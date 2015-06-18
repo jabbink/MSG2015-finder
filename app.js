@@ -133,7 +133,14 @@ var checkStatus = function(roomID, cb) {
 			data += chunk;
 		});
 		res.on('end', function() {
-			data = JSON.parse(data);
+			try {
+				data = JSON.parse(data);
+			} catch (err) {
+				setTimeout(function() {
+					checkStatus(roomID, cb);
+				}, 1000);
+				return;
+			}
 			if (isEmptyObject(data.response)) {
 
 			} else {
