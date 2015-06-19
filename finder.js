@@ -1,6 +1,6 @@
 var http = require('http');
 
-var lowestRoom = 45630;
+var lowestRoom = 45677;
 
 var isEmptyObject = function(obj) {
   return !Object.keys(obj).length;
@@ -190,5 +190,8 @@ module.exports = function(cb, instances) {
 
 	return {getUsers: function() {
 		return msgUsers;
+	},
+	getLowestRoom: function() {
+		return lowestRoom;
 	}};
 };

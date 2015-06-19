@@ -76,9 +76,12 @@ setInterval(function() {
 io.on('connection', function (socket) {
   socket.emit('usercount', {usercount: io.sockets.sockets.length});
   var users = finder.getUsers();
+  var lowestRoom = finder.getLowestRoom();
   Object.keys(users).forEach(function(key) {
     var user = users[key];
-    socket.emit('roomchange', {user: user, roomID: user.room});
+    if (user.room >= lowestRoom) {
+      socket.emit('roomchange', {user: user, roomID: user.room});
+    }
   });
 });
 
