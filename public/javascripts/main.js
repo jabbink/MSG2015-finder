@@ -5,6 +5,10 @@ socket.on('roomchange', function(msg) {
   console.log(msg.user.name +': '+ msg.roomID);
 });
 
+socket.on('usercount', function(msg) {
+  $('#connections').text(msg.usercount);
+});
+
 socket.on('disconnect', function(){
   $('#status').text('reconnecting...');
 });

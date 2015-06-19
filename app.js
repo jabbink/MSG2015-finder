@@ -69,7 +69,12 @@ finder = finder(function(user, roomID) {
   io.emit('roomchange', {user: user, roomID: roomID});
 }, 50);
 
+setInterval(function() {
+  io.emit('usercount', {usercount: io.sockets.sockets.length});
+}, 10000);
+
 io.on('connection', function (socket) {
+  socket.emit('usercount', {usercount: io.sockets.sockets.length});
   var users = finder.getUsers();
   Object.keys(users).forEach(function(key) {
     var user = users[key];
