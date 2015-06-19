@@ -187,4 +187,8 @@ module.exports = function(cb, instances) {
 		next(lowestRoom + i, i, instances, cb);
 		i++;	
 	}
+
+	return {getUsers: function() {
+		return msgUsers;
+	}};
 };

@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+.room {
+  color: #f00;
+  font-weight: bold;
+}
+
+.user {
+  color: #00f;
+  font-weight: bold;
+}

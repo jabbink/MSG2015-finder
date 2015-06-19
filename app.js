@@ -65,14 +65,15 @@ app.io = io;
 
 var finder = require('./finder');
 
-finder(function(user, roomID) {
+finder = finder(function(user, roomID) {
   io.emit('roomchange', {user: user, roomID: roomID});
 }, 50);
 
 io.on('connection', function (socket) {
-  socket.emit('news', { hello: 'world' });
-  socket.on('my other event', function (data) {
-    console.log(data);
+  var users = finder.getUsers();
+  Object.keys(users).forEach(function(key) {
+    var user = users[key];
+    socket.emit('roomchange', {user: user, roomID: user.room});
   });
 });
 
