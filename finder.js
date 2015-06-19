@@ -101,7 +101,7 @@ var getNames = function(roomID, instance, step, cb, externalCb) {
 			} catch (err) {
 				setTimeout(function() {
 					getNames(roomID, instance, step, cb, externalCb);
-				}, 1000);
+				}, 2000);
 				return;
 			}
 			if (isEmptyObject(data.response)) {
@@ -125,7 +125,7 @@ var getNames = function(roomID, instance, step, cb, externalCb) {
 		console.log("Got error: " + e.message);
 		setTimeout(function() {
 			getNames(roomID, instance, step, cb, externalCb);
-		}, 1000);
+		}, 2000);
 	});
 };
 
@@ -143,7 +143,7 @@ var checkStatus = function(roomID, cb) {
 			} catch (err) {
 				setTimeout(function() {
 					checkStatus(roomID, cb);
-				}, 1000);
+				}, 2000);
 				return;
 			}
 			if (isEmptyObject(data.response)) {
@@ -164,7 +164,7 @@ var checkStatus = function(roomID, cb) {
 		console.log("Got error: " + e.message);
 		setTimeout(function() {
 			checkStatus(roomID, cb);
-		}, 1000);
+		}, 2000);
 	});
 };
 
@@ -176,7 +176,7 @@ var next = function(nextRoomID, instance, step, cb) {
 		console.log('getting room '+ nextRoomID);*/
 	setTimeout(function() {
 		getNames(nextRoomID, instance, step, next, cb);
-	}, 1000);
+	}, 2000);
 };
 
 module.exports = function(cb, instances) {
