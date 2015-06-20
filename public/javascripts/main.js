@@ -1,8 +1,14 @@
 var socket = io();
 
 socket.on('roomchange', function(msg) {
-  $('#log').prepend('<div>['+ (new Date()).toLocaleTimeString() +'] - <span class="user">'+ msg.user.name +'</span> joined <span class="room">'+ msg.roomID +'</span></div>');
-  console.log(msg.user.name +': '+ msg.roomID);
+  var date = undefined;
+  if (msg.user.date) {
+    date = new Date(msg.user.date);
+  } else {
+    date = new Date();
+  }
+  $('#log').prepend('<div>['+ date.toLocaleTimeString() +'] - <span class="user">'+ msg.user.name +'</span> joined <span class="room">'+ msg.user.room +'</span></div>');
+  console.log(msg.user.name +': '+ msg.user.room);
 });
 
 socket.on('usercount', function(msg) {

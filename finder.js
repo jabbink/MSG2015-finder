@@ -113,8 +113,9 @@ var getNames = function(roomID, instance, step, cb, externalCb) {
 				data.forEach(function(val) {
 					if (msgUsers[val.accountid] != undefined && msgUsers[val.accountid].room != roomID) {
 						msgUsers[val.accountid].room = roomID;
+						msgUsers[val.accountid].date = new Date();
 						console.log('Found user '+ val.name +' in room '+ roomID);
-						externalCb(val, roomID);
+						externalCb(msgUsers[val.accountid]);
 					}
 				});
 				cb(roomID + step, instance, step, externalCb);
