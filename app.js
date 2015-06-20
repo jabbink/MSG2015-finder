@@ -65,8 +65,8 @@ app.io = io;
 
 var finder = require('./finder');
 
-finder = finder(function(user, roomID) {
-  io.emit('roomchange', {user: user, roomID: roomID});
+finder = finder(function(user) {
+  io.emit('roomchange', {user: user});
 }, 50);
 
 setInterval(function() {
@@ -80,7 +80,7 @@ io.on('connection', function (socket) {
   Object.keys(users).forEach(function(key) {
     var user = users[key];
     if (user.room >= lowestRoom) {
-      socket.emit('roomchange', {user: user, roomID: user.room});
+      socket.emit('roomchange', {user: user});
     }
   });
 });
