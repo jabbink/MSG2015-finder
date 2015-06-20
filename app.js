@@ -81,7 +81,7 @@ io.on('connection', function (socket) {
     var pongUsers = {};
     Object.keys(users).forEach(function(key) {
       var user = users[key];
-      if (user.room >= lowestRoom && user.date) {
+      if (/*user.room >= lowestRoom && */user.date) {
         pongUsers[user.accountid] = user;
       }
     });
