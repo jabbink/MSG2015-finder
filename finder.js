@@ -7,81 +7,90 @@ var isEmptyObject = function(obj) {
 }
 
 var msgUsers = {
-	11662973: {
-		"accountid": 11662973,
-		"name": "[MSG15 MOD] desolation",
-		"room": 43983
-	},
-	89051843: {
-		"accountid": 89051843,
-		"name": "[MSG15 ADMIN] /u/wchill",
-		"room": 43983
-	},
-	28974871: {
-		"accountid": 28974871,
-		"name": "[MSG15 ADMIN] xᴄᴀᴠᴀ86x ☂",
-		"room": 43983
-	},
-	446489: {
-		"accountid": 446489,
-		"name": "[MSG15 FAN] Trouvist",
-		"room": 43983
-	},
-	45800824: {
-		"accountid": 45800824,
-		"name": "[MSG15 MOD] Mithriael",
-		"room": 43983
-	},
-	10098050: {
-		"accountid": 10098050,
-		"name": "[MSG15 ADMIN] Mr. uLLeticaL™",
-		"room": 43983
-	},
-	2565066: {
-		"accountid": 2565066,
-		"name": "[MSG15 MOD] Pawsed",
-		"room": 44215
-	},
-	6905879: {
-		"accountid": 6905879,
-		"name": "[MSG15 MOD] iddqd",
-		"room": 44215
-	},
-	69178454: {
-		"accountid": 69178454,
-		"name": "[MSG15 MOD] rhythm girl",
-		"room": 44215
-	},
-	79519465: {
-		"accountid": 79519465,
-		"name": "[MSG15 ADMIN] Soragnamdan Ѳ空",
-		"room": 44215
-	},
-	111470985: {
-		"accountid": 111470985,
-		"name": "[MSG15 BOT]SoraBot",
-		"room": 44215
-	},
-	9727743: {
+	"9727743": {
+		"date": "2015-06-20T10:33:14.207Z",
 		"accountid": 9727743,
-		"name": "[MSG15 ADMIN] Cobra",
-		"room": 44215
+		"room": 47051,
+		"name": "[MSG15 ADMIN] Cobra"
 	},
-	59119854: {
+	"59119854": {
+		"date": "2015-06-20T10:46:12.034Z",
 		"accountid": 59119854,
-		"name": "[MSG15 MOD] alicia ws@d",
-		"room": 44215
+		"room": 47100,
+		"name": "[MSG15 MOD] alicia ws@d"
 	},
-	133090071: {
-		"accountid": 133090071,
-		"name": "[MSG15 ADMIN]Mrs. uLLeticaL™",
-		"room": 44215
+	"2565066": {
+		"date": "2015-06-20T10:33:12.383Z",
+		"accountid": 2565066,
+		"room": 47090,
+		"name": "[MSG15 MOD] Pawsed"
 	},
-	8520498: {
+	"45800824": {
+		"date": "2015-06-20T10:33:37.776Z",
+		"accountid": 45800824,
+		"room": 47693,
+		"name": "[MSG15 MOD] Mithriael"
+	},
+	"69178454": {
+		"date": "2015-06-20T14:29:32.883Z",
+		"accountid": 69178454,
+		"room": 47693,
+		"name": "[MSG15 MOD] rhythm girl"
+	},
+	"10098050": {
+		"date": "2015-06-20T10:33:37.776Z",
+		"accountid": 10098050,
+		"room": 47693,
+		"name": "[MSG15 ADMIN] Mr. uLLeticaL\u2122"
+	},
+	"28974871": {
+		"date": "2015-06-20T10:33:46.592Z",
+		"accountid": 28974871,
+		"room": 47770,
+		"name": "[MSG15 ADMIN] x\u1d04\u1d00\u1d20\u1d0086x \u2602"
+	},
+	"11662973": {
+		"date": "2015-06-20T14:37:32.510Z",
+		"accountid": 11662973,
+		"room": 47200,
+		"name": "[MSG15 MOD] desolation"
+	},
+	"89051843": {
+		"date": "2015-06-20T10:33:12.484Z",
+		"accountid": 89051843,
+		"room": 47091,
+		"name": "[MSG15 ADMIN] /u/wchill"
+	},
+	"6905879": {
+		"date": "2015-06-20T11:58:22.100Z",
+		"accountid": 6905879,
+		"room": 47770,
+		"name": "[MSG15 MOD] iddqd"
+	},
+	"446489": {
+		"date": "2015-06-20T10:33:12.365Z",
+		"accountid": 446489,
+		"room": 47090,
+		"name": "[MSG15 FAN] Trouvist"
+	},
+	"8520498": {
+		"date": "2015-06-20T10:33:37.769Z",
 		"accountid": 8520498,
-		"name": "[MSG15 ADMIN] Minz",
-		"room": 44215
+		"room": 47693,
+		"name": "[MSG15 ADMIN] Minz"
 	},
+	"133090071": {
+		"date": "2015-06-20T10:33:46.588Z",
+		"accountid": 133090071,
+		"room": 47770,
+		"name": "[MSG15 ADMIN]Mrs. uLLeticaL\u2122"
+	},
+	"79519465": {
+		"date": "2015-06-20T10:33:39.287Z",
+		"accountid": 79519465,
+		"room": 47634,
+		"name": "[MSG15 ADMIN] Soragnamdan \u0472\u7a7a"
+	}
 };
 
 var baseURL = 'http://steamapi-a.akamaihd.net/ITowerAttackMiniGameService/GetPlayerNames/v0001/?gameid=';

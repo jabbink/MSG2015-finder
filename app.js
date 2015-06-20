@@ -67,7 +67,7 @@ var finder = require('./finder');
 
 finder = finder(function(user) {
   io.emit('roomchange', {user: user});
-}, 100);
+}, 25);
 
 setInterval(function() {
   io.emit('usercount', {usercount: io.sockets.sockets.length});
