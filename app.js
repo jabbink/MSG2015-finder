@@ -67,7 +67,7 @@ var finder = require('./finder');
 
 finder = finder(function(user) {
   io.emit('roomchange', {user: user});
-}, 50);
+}, 100);
 
 setInterval(function() {
   io.emit('usercount', {usercount: io.sockets.sockets.length});
@@ -75,13 +75,17 @@ setInterval(function() {
 
 io.on('connection', function (socket) {
   socket.emit('usercount', {usercount: io.sockets.sockets.length});
-  var users = finder.getUsers();
-  var lowestRoom = finder.getLowestRoom();
-  Object.keys(users).forEach(function(key) {
-    var user = users[key];
-    if (user.room >= lowestRoom) {
-      socket.emit('roomchange', {user: user});
-    }
+  socket.on('ping', function() {
+    var users = finder.getUsers();
+    var lowestRoom = finder.getLowestRoom();
+    var pongUsers = {};
+    Object.keys(users).forEach(function(key) {
+      var user = users[key];
+      if (user.room >= lowestRoom && user.date) {
+        pongUsers[user.accountid] = user;
+      }
+    });
+    socket.emit('pong', {users: pongUsers});
   });
 });
 
