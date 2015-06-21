@@ -3,7 +3,7 @@ var http = require('http');
 var lowestRoom = 48112;
 
 var isEmptyObject = function(obj) {
-  return !Object.keys(obj).length;
+	return !Object.keys(obj).length;
 }
 
 var msgUsers = {
