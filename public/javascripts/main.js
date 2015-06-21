@@ -10,8 +10,12 @@ var logUser = function(user) {
   } else {
     date = new Date();
   }
-  $('#log').prepend('<div>['+ date.toLocaleTimeString() +'] - <span class="user">'+ user.name +'</span> joined <span class="room">'+ user.room +'</span></div>');
-  console.log(user.name +': '+ user.room);
+  var name = user.name;
+  if (user.prefix) {
+    name = user.prefix +' '+ name;
+  }
+  $('#log').prepend('<div>['+ date.toLocaleTimeString() +'] - <span class="user">'+ name +'</span> joined <span class="room">'+ user.room +'</span></div>');
+  console.log(name +': '+ user.room);
 };
 
 socket.on('roomchange', function(msg) {

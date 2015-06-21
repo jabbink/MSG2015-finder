@@ -7,90 +7,96 @@ var isEmptyObject = function(obj) {
 }
 
 var msgUsers = {
-	"9727743": {
-		"date": "2015-06-20T10:33:14.207Z",
-		"room": 47051,
-		"name": "[MSG15 ADMIN] Cobra",
-		"accountid": 9727743
-	},
-	"59119854": {
-		"date": "2015-06-20T10:46:12.034Z",
-		"room": 47100,
-		"name": "[MSG15 MOD] alicia ws@d",
-		"accountid": 59119854
-	},
-	"133090071": {
-		"date": "2015-06-20T10:33:46.588Z",
-		"room": 47770,
-		"name": "[MSG15 ADMIN]Mrs. uLLeticaL\u2122",
-		"accountid": 133090071
-	},
-	"45800824": {
-		"date": "2015-06-20T10:33:37.776Z",
-		"room": 47693,
-		"name": "[MSG15 MOD] Mithriael",
-		"accountid": 45800824
-	},
-	"69178454": {
-		"date": "2015-06-20T14:29:32.883Z",
-		"room": 47693,
-		"name": "[MSG15 MOD] rhythm girl",
-		"accountid": 69178454
-	},
 	"10098050": {
-		"date": "2015-06-20T10:33:37.776Z",
-		"room": 47693,
+		"accountid": 10098050,
+		"date": "2015-06-20T23:23:22.959Z",
 		"name": "[MSG15 ADMIN] Mr. uLLeticaL\u2122",
-		"accountid": 10098050
-	},
-	"28974871": {
-		"date": "2015-06-20T10:33:46.592Z",
-		"room": 47770,
-		"name": "[MSG15 ADMIN] x\u1d04\u1d00\u1d20\u1d0086x \u2602",
-		"accountid": 28974871
+		"room": 48858
 	},
 	"11662973": {
-		"date": "2015-06-20T14:37:32.510Z",
-		"room": 47200,
+		"accountid": 11662973,
+		"date": "2015-06-21T00:00:10.722Z",
 		"name": "[MSG15 MOD] desolation",
-		"accountid": 11662973
+		"room": 48293
 	},
-	"89051843": {
-		"date": "2015-06-20T10:33:12.484Z",
-		"room": 47091,
-		"name": "[MSG15 ADMIN] /u/wchill",
-		"accountid": 89051843
-	},
-	"6905879": {
-		"date": "2015-06-20T11:58:22.100Z",
-		"room": 47770,
-		"name": "[MSG15 MOD] iddqd",
-		"accountid": 6905879
-	},
-	"8520498": {
-		"date": "2015-06-20T10:33:37.769Z",
-		"room": 47693,
-		"name": "[MSG15 ADMIN] Minz",
-		"accountid": 8520498
-	},
-	"446489": {
-		"date": "2015-06-20T10:33:12.365Z",
-		"room": 47090,
-		"name": "[MSG15 FAN] Trouvist",
-		"accountid": 446489
+	"133090071": {
+		"accountid": 133090071,
+		"date": "2015-06-20T19:15:46.218Z",
+		"name": "[MSG15 ADMIN]Mrs. uLLeticaL\u2122",
+		"room": 48293
 	},
 	"2565066": {
-		"date": "2015-06-20T10:33:12.383Z",
-		"room": 47090,
+		"accountid": 2565066,
+		"date": "2015-06-21T11:01:54.723Z",
 		"name": "[MSG15 MOD] Pawsed",
-		"accountid": 2565066
+		"room": 48293
+	},
+	"28974871": {
+		"accountid": 28974871,
+		"date": "2015-06-21T00:38:38.710Z",
+		"name": "[MSG15 ADMIN] x\u1d04\u1d00\u1d20\u1d0086x \u2602",
+		"room": 48897
+	},
+	"446489": {
+		"accountid": 446489,
+		"date": "2015-06-21T11:30:11.076Z",
+		"name": "[MSG15 FAN] Trouvist",
+		"room": 48669
+	},
+	"45800824": {
+		"accountid": 45800824,
+		"date": "2015-06-20T22:38:50.247Z",
+		"name": "[MSG15 MOD] Mithriael",
+		"room": 48272
+	},
+	"59119854": {
+		"accountid": 59119854,
+		"date": "2015-06-20T10:46:12.034Z",
+		"name": "[MSG15 MOD] alicia ws@d",
+		"room": 47100
+	},
+	"6905879": {
+		"accountid": 6905879,
+		"date": "2015-06-20T20:27:51.741Z",
+		"name": "[MSG15 MOD] iddqd",
+		"room": 48725
+	},
+	"69178454": {
+		"accountid": 69178454,
+		"date": "2015-06-21T10:46:41.515Z",
+		"name": "[MSG15 MOD] rhythm girl",
+		"room": 48275
 	},
 	"79519465": {
-		"date": "2015-06-20T10:33:39.287Z",
-		"room": 47634,
+		"accountid": 79519465,
+		"date": "2015-06-20T19:15:45.932Z",
 		"name": "[MSG15 ADMIN] Soragnamdan \u0472\u7a7a",
-		"accountid": 79519465
-	}
+		"room": 48296
+	},
+	"8520498": {
+		"accountid": 8520498,
+		"date": "2015-06-21T11:21:57.370Z",
+		"name": "[MSG15 ADMIN] Minz",
+		"room": 49178
+	},
+	"89051843": {
+		"accountid": 89051843,
+		"date": "2015-06-21T01:10:01.319Z",
+		"name": "[MSG15 ADMIN] /u/wchill",
+		"room": 48915
+	},
+	"9727743": {
+		"accountid": 9727743,
+		"date": "2015-06-21T01:05:06.788Z",
+		"name": "[MSG15 ADMIN] Cobra",
+		"room": 48274
+	},
+	"22066825": {
+		"accountid": 22066825,
+		"name": "REKT-IT-RALPH™",
+		"prefix": "[YOWH]",
+		"room": 49050
+	},
 };
 
 var baseURL = 'http://steamapi-a.akamaihd.net/ITowerAttackMiniGameService/GetPlayerNames/v0001/?gameid=';
@@ -123,6 +129,7 @@ var getNames = function(roomID, instance, step, cb, externalCb) {
 					if (msgUsers[val.accountid] != undefined && msgUsers[val.accountid].room != roomID) {
 						msgUsers[val.accountid].room = roomID;
 						msgUsers[val.accountid].date = new Date();
+						msgUsers[val.accountid].name = val.name;
 						console.log('Found user '+ val.name +' in room '+ roomID);
 						externalCb(msgUsers[val.accountid]);
 					}
